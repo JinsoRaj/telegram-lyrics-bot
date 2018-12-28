@@ -15,7 +15,8 @@ Who doesn't like lyrics? :wink: Everybody does! :satisfied:.. and we all love:he
 ```
 You need to add a **.env** file at the root, and its content should be:
 ```ruby
-TOKEN='INSERT YOUR TOKEN HERE'
+GENIUS_TOKEN='INSERT TOKEN HERE'
+TELEGRAM_TOKEN='INSERT TOKEN HERE'
 ```
 :point_up:obtain a **CLIENT ACCESS TOKEN**  from [Genius](https://docs.genius.com/).
 
