@@ -3,23 +3,19 @@ import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
-# TODO: should go into settings.py
-load_dotenv()
-
 BASE_URL = 'https://api.genius.com'
-TOKEN = os.getenv('GENIUS_TOKEN')
-
 
 class GeniusLyrics:
-    def __init__(self, artist, title):
+    def __init__(self, artist, title, access_token):
         self.artist = artist
         self.title = title
+        self.token = access_token
         
     def _get_song_details(self):
         details = None
         
         try:
-            headers = {'Authorization': 'Bearer ' + TOKEN}
+            headers = {'Authorization': 'Bearer ' + self.token}
             data = {'q': self.title + ' ' + self.artist}
             response = requests.get('{}/search'.format(BASE_URL), data=data, headers=headers).json()
             
