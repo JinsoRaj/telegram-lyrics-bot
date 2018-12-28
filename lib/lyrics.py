@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE_URL = 'https://api.genius.com'
-TOKEN = os.getenv('TOKEN')
+TOKEN = os.getenv('GENIUS_TOKEN')
 
 
 class GeniusLyrics:
