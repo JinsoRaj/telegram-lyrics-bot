@@ -8,9 +8,10 @@ Who doesn't like lyrics? :wink: Everybody does! :satisfied:.. and we all love:he
 .
 ├── README.md
 ├── app.py
-└── lib
-    ├── __init__.py
-    └── lyrics.py
+├── lib
+│   ├── __init__.py
+│   └── lyrics.py
+└── requirements.txt
 ```
 You need to add a **.env** file at the root, and its content should be:
 ```ruby
