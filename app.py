@@ -20,7 +20,7 @@ def handle(message):
     # get title and artist name
     q = message['text'].split(' ', 1)
     # query Genius' API
-    artist, title = q[0], q[1]
+    artist, title = q[0], q[0]
     
     song = GeniusLyrics(artist, title, GENIUS_TOKEN)
 
